@@ -23,7 +23,7 @@ FROM adoptopenjdk:11-jre-hotspot
 WORKDIR /app
 
 # Copy the built JAR file from the build stage
-COPY --from=build /app/target/RMManagementPortal-0.0.1-SNAPSHOT.jar ./RMManagementPortal.jar
+COPY --from=build /app/target/RMManagementPortal-0.0.1-SNAPSHOT.jar ./RMManagementPortal.war
 
 # Command to run the application
-CMD ["java", "-jar", "RMManagementPortal.jar"]
+CMD ["java", "-jar", "RMManagementPortal.war"]
