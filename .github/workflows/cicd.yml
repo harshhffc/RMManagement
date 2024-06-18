@@ -56,7 +56,7 @@ jobs:
           context: .
           dockerfile: Dockerfile  # Adjust Dockerfile path if necessary
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/RMManagement:${{ env.TAG }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/rmmanagement:${{ env.TAG }}
 
       # Step 8: Deploy to Server
       - name: Deploy to Server
