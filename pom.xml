@@ -5,6 +5,7 @@
 	<groupId>RMManagementPortal</groupId>
 	<artifactId>RMManagementPortal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>RMManagementPortal</name>
 	<description>Web server for HFFC RM Management application.</description>
 
