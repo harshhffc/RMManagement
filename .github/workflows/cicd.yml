@@ -69,4 +69,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/rmmanagement:${{ env.TAG }}
             docker stop RMManagement || true
             docker rm RMManagement || true
-            docker run -d --name RMManagement -p 8446:8446 ${{ secrets.DOCKER_HUB_USERNAME }}/rmmanagement:${{ env.TAG }}
+            docker run -d --name RMManagement -p 8446:8080 ${{ secrets.DOCKER_HUB_USERNAME }}/rmmanagement:${{ env.TAG }}
