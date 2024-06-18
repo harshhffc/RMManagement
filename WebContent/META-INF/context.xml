@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+
+	<!-- Default set of monitored resources. If one of these changes, the -->
+	<!-- web application will be reloaded. -->
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+	<!-- p@radise7_mysql -->
+	<!-- Ranan#123 -->
+	<!-- Sanjay14mysql -->
+
+	<!-- <Resource 
+		name="jdbc/rm_db_local_server" 
+		auth="Container"
+		type="javax.sql.DataSource"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		maxTotal="200" 
+		maxWaitMillis="24000" 
+		maxIdle="10"
+		removeAbandonedOnBorrow="true" 
+		logAbandoned="true" 
+		username="root"
+		password="Sanjay14mysql" 
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/RMManagementDB?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true" /> -->
+ 
+	<!-- Staging cred -->
+
+	<!-- <Resource 
+		name="jdbc/rm_db_staging_server" 
+		auth="Container" 
+		type="javax.sql.DataSource" 
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" 
+		maxTotal="200" 
+		maxWaitMillis="24000" 
+		maxIdle="10" 
+		removeAbandonedOnBorrow="true" 
+		logAbandoned="true" 
+		username="naol" 
+		password="$Hffc9_SarikaML" 
+		driverClassName="com.mysql.cj.jdbc.Driver" 
+		url="jdbc:mysql://65.2.48.131:3306/RMManagementDB?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/> -->
+		
+		<!-- Production cred -->
+		
+	<Resource 
+	 	name="jdbc/rm_db_remote_server" 
+	 	auth="Container" 
+	 	type="javax.sql.DataSource" 
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" 
+		maxTotal="250" 
+		maxWaitMillis="24000" 
+		maxIdle="10" 
+		removeAbandonedOnBorrow="true" 
+		logAbandoned="true" 
+		username="masternaol_rmm" 
+		password="$Rmm_masternaol7" 
+		driverClassName="com.mysql.cj.jdbc.Driver" 
+		url="jdbc:mysql://rmm-db-instance.c5jfvga5d4bj.ap-south-1.rds.amazonaws.com:3306/RMManagementDB?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
+
+	<!-- com.mysql.jdbc.Driver -->
+
+	<!-- Uncomment this to disable session persistence across Tomcat restarts -->
+	<!-- <Manager pathname="" /> -->
+
+	<!-- Uncomment this to enable Comet connection tacking (provides events 
+		on session expiration as well as webapp lifecycle) -->
+	<!-- <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" 
+		/> -->
+</Context>
