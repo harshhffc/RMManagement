@@ -3,7 +3,7 @@
 FROM tomcat:9.0
 
 # Copy the WAR file to the webapps directory of Tomcat
-COPY target/RMManagementPortal-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/
+COPY target/RMManagementPortal-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/RMManagementPortal.war
 
 # Expose the default Tomcat port
 EXPOSE 8080
