@@ -43,9 +43,9 @@ public class HibernateUtil {
 			
 				if (Constants.IS_STAGING) {
 					
-					settings.put(Environment.URL, "jdbc:mysql://127.0.0.1:3306/RMManagementDB?useUnicode=true&characterEncoding=utf8&autoReconnect=true");
-					settings.put(Environment.USER, "naol");
-					settings.put(Environment.PASS, "$Hffc9_SarikaML");
+					settings.put(Environment.URL, "jdbc:mysql://mobility-staging-db.cjminpnxnvgv.ap-south-1.rds.amazonaws.com:3306/RMManagementDB?createDatabaseIfNotExist=true");
+					settings.put(Environment.USER, "write_user");
+					settings.put(Environment.PASS, "Px7G0Dqx99LignQsGs");
 					
 				} else {
 					

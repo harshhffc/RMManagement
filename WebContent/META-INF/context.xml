@@ -29,7 +29,7 @@
  
 	<!-- Staging cred -->
 
-	<!-- <Resource 
+	<Resource 
 		name="jdbc/rm_db_staging_server" 
 		auth="Container" 
 		type="javax.sql.DataSource" 
@@ -39,14 +39,14 @@
 		maxIdle="10" 
 		removeAbandonedOnBorrow="true" 
 		logAbandoned="true" 
-		username="naol" 
-		password="$Hffc9_SarikaML" 
+		username="write_user" 
+		password="Px7G0Dqx99LignQsGs" 
 		driverClassName="com.mysql.cj.jdbc.Driver" 
-		url="jdbc:mysql://65.2.48.131:3306/RMManagementDB?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/> -->
+		url="jdbc:mysql://mobility-staging-db.cjminpnxnvgv.ap-south-1.rds.amazonaws.com:3306/RMManagementDB?createDatabaseIfNotExist=true"/>
 		
 		<!-- Production cred -->
 		
-	<Resource 
+	<!-- <Resource 
 	 	name="jdbc/rm_db_remote_server" 
 	 	auth="Container" 
 	 	type="javax.sql.DataSource" 
@@ -59,7 +59,7 @@
 		username="masternaol_rmm" 
 		password="$Rmm_masternaol7" 
 		driverClassName="com.mysql.cj.jdbc.Driver" 
-		url="jdbc:mysql://rmm-db-instance.c5jfvga5d4bj.ap-south-1.rds.amazonaws.com:3306/RMManagementDB?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/>
+		url="jdbc:mysql://rmm-db-instance.c5jfvga5d4bj.ap-south-1.rds.amazonaws.com:3306/RMManagementDB?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true"/> -->
 
 	<!-- com.mysql.jdbc.Driver -->
 

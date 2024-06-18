@@ -2,14 +2,14 @@ package utils;
 
 public class Constants {
 
-	public static final boolean IS_PRODUCTION = true; //TODO: true for production
-	public static final boolean IS_API_IN_PRODUCTION = true; //TODO: true for production
-	public static final boolean IS_DB_IN_PRODUCTION = true; //TODO: true for production
-	public static final boolean IS_SF_IN_PRODUCTION = true; //TODO: true for production
-	public static final boolean IS_STRICT_PROD_PROCESS_ACTIVE = true;  //TODO: true for production
-	public static final boolean IS_NOTIFICATION_LIVE = true; // TODO: TRUE for production
+	public static final boolean IS_PRODUCTION = false; //TODO: true for production
+	public static final boolean IS_API_IN_PRODUCTION = false; //TODO: true for production
+	public static final boolean IS_DB_IN_PRODUCTION = false; //TODO: true for production
+	public static final boolean IS_SF_IN_PRODUCTION = false; //TODO: true for production
+	public static final boolean IS_STRICT_PROD_PROCESS_ACTIVE = false;  //TODO: true for production
+	public static final boolean IS_NOTIFICATION_LIVE = false; // TODO: TRUE for production
 	public static final boolean IS_SF_PREPROD = true;  //TODO: false for production | true is preprod - false is fullcopy
-	public static final boolean IS_STAGING = false; // TODO: FALSE for production
+	public static final boolean IS_STAGING = true; // TODO: FALSE for production
 	
 	public static final String UPLOAD_FILE_SERVER = "/var/www/images/document_picture/"; // TODO For Production
 	public static final String UPLOAD_FILE_LOCAL_SERVER = "/var/www/images/document_picture/"; // TODO: FOR STAGING	
